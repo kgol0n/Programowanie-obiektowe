@@ -1,0 +1,58 @@
+Wykonaj poniższe czynności:
+Zdefiniuj klasę Vehicle, która posiada następujące pola: brand, model i yearOfProduction.
+Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól.
+Rok produkcji (yearOfProduction) nie powinien być większy od aktualnego roku. W przypadku podania wartości większej, ustaw rok produkcji na aktualny rok.
+Pola brand i model nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis.
+Dodaj metodę toString(), która zwraca informacje o pojeździe w formacie: "Vehicle: [brand] [model], Year: [yearOfProduction].".
+Dodaj metodę equals(), która porównuje dwa pojazdy na podstawie ich pól brand, model i yearOfProduction.
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą equals()
+
+Wykonaj poniższe czynności:
+Zdefiniuj klasę Book, która posiada następujące pola: title, author i numberOfPages.
+Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól.
+Liczba stron (numberOfPages) nie powinna być ujemna. W przypadku podania wartości ujemnej, ustaw liczbę stron na jedną.
+Pola title i author nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
+Dodaj metodę toString(), która zwraca informacje o książce w formacie: "Book: [title] by [author], Pages: [numberOfPages].".
+Dodaj metodę equals(), która porównuje dwie książki na podstawie ich pól title, author i numberOfPages.
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą equals()
+
+Wykonaj poniższe czynności:
+Zdefiniuj klasę Product, która posiada następujące pola: productName, category i price.
+Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do odpowiednich pól.
+Cena (price) nie powinna być ujemna. W przypadku podania wartości ujemnej, ustaw cenę produktu na zero.
+Pola productName i category nie powinny być puste ani równać się null. W przypadku podania pustego napisu lub null, ustaw odpowiednio pusty napis.
+Dodaj metodę toString(), która zwraca informacje o produkcie w formacie: "Product: [productName], Category: [category], Price: [price].".
+Dodaj metodę equals(), która porównuje dwa produkty na podstawie ich pól productName, category i price.
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą equals()
+
+Wykonaj poniższe czynności:
+Stwórz klasę CDAlbum z prywatnymi polami: artistName, albumTitle oraz tracks (jako tablica typu int reprezentująca długość każdego utworu w minutach).
+Dodaj konstruktor, który przyjmuje artistName, albumTitle oraz ilość utworów jako argumenty.
+Dodaj metody dostępowe (gettery i settery) oraz metodę addTrack(int index, int length), która dodaje długość utworu na podanym indeksie.
+Dodaj również metodę totalLength() do obliczania i zwracania łącznej długości wszystkich utworów.
+Dodaj metodę toString(), która zwraca informacje o artyście, albumie oraz czasie trwania wszystkich utworów w formacie: "CDAlbum by [artistName]: [albumTitle], Total Length = [totalLength] minutes, Tracks Length: [length1, length2, ...]. ".
+Dodaj metodę equals(), która porównuje dwa obiekty klasy CDAlbum na podstawie ich pól artistName, albumTitle oraz zawartości tablicy tracks. Dwa albumy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą equals()
+
+Wykonaj poniższe czynności:
+Stwórz klasę MovieRating z prywatnymi polami: movieTitle, directorName oraz ratings (jako tablica typu double reprezentująca oceny filmu w skali od 1 do 10).
+Dodaj konstruktor, który przyjmuje movieTitle, directorName oraz ilość ocen jako argumenty.
+Dodaj metody dostępowe (gettery i settery) oraz metodę addRating(int index, double rating), która dodaje ocenę filmu na podanym indeksie.
+Dodaj również metodę averageRating() do obliczania i zwracania średniej oceny filmu.
+Dodaj metodę toString(), która zwraca informacje o filmie, reżyserze, średniej ocenie oraz wszystkich ocenach w formacie: "MovieRating for [movieTitle] by [directorName]: Average Rating = [averageRating], Ratings: [rating1, rating2, ...]. ".
+Dodaj metodę equals(), która porównuje dwa obiekty klasy MovieRating na podstawie ich pól movieTitle, directorName oraz zawartości tablicy ratings. Dwa filmy są uważane za identyczne, jeśli wszystkie informacje są takie same.
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być zgodna z metodą equals()
+
+Wykonaj poniższe czynności:
+Stwórz klasę Gradebook z prywatnymi polami: firstName, lastName oraz grades (jako ArrayList typu int). Dodaj konstruktor,
+który przyjmuje firstName i lastName jako argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody
+addGrade(int grade) i removeGrade(int index), które odpowiednio dodają lub usuwają ocenę z listy ocen. Dodaj również
+metodę averageGrade() do obliczania i zwracania średniej ocen.
+Dodaj metodę toString(), która zwraca informacje o uczniu, średniej jego ocen oraz wszystkich ocenach w formacie:
+"Gradebook for [firstName] [lastName]: Average Grade = [averageGrade], Grades: [grade1, grade2, ...].".
+Zwróć uwagę na wielkość liter i znaki interpunkcyjne.
+Dodaj metodę equals(), która porównuje dwa obiekty klasy Gradebook na podstawie ich pól firstName, lastName
+ oraz zawartości listy grades. Dwa dzienniczki są uważane za identyczne, jeśli mają takie same imię, nazwisko i identyczny
+ zestaw ocen (z uwzględnieniem kolejności).
+Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda ta powinna być
+zgodna z metodą equals()
