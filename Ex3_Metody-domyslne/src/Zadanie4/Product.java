@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Product {
     private String productName;
     private String category;
-    private int price;
+    private double price;
 
-    public Product(String productName, String category, int price) {
+    public Product(String productName, String category, double price) {
         setProductName(productName);
         setCategory(category);
         setPrice(price);
@@ -46,7 +46,7 @@ public class Product {
     }
 
     public void setCategory(String category) {
-        if(category == null | category.isEmpty()){
+        if(category == null || category.isEmpty()){
             this.category = "";
         } else{
             this.category = category;
@@ -57,7 +57,7 @@ public class Product {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         if(price < 0){
             this.price = 0;
         } else{
